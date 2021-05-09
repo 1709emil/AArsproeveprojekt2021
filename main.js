@@ -37,6 +37,7 @@ for (const combination of winPatterns) {
     return combination}}
 return null;
 };
+
 isTheGameInProgress(){
   return ! this.winningLogic() && this.board.includes(null);
 }
@@ -44,7 +45,7 @@ isTheGameInProgress(){
 
 let game = new gameLogic();
 
-// Da jeg ikke kunne finde ud af at lave det så man kan se det på selve spillePlade, så er det et eksemple på at grund logiken for spillet virke. Men det er bare lave i consolen
+// Da jeg ikke kunne finde ud af at lave det så man kan se det på selve spillePlade, så er der et eksemple på, at grund logiken for spillet virker. Men det er bare lave i consolen
 console.log(game.board);
 game.makeMove(0);
 console.log(game.board,game.isTheGameInProgress(),game.winningLogic());
